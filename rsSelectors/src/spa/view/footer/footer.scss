@@ -1,0 +1,22 @@
+.footer {
+
+    height: 10%;
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 10px;
+    padding: 10px;
+
+    border: 1px solid;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__title {
+    margin: 0;
+    user-select: none;
+}

@@ -1,0 +1,46 @@
+.is-moon {
+  background-color: #000;
+  color: #fff
+}
+
+.is-moon .footer__logo-svg--partone,
+.is-moon .footer__logo-svg--parttwo{
+  color: $text-icons-color-darkmode;
+}
+
+.is-moon .burger__line {
+  border: 2px solid $text-icons-color-darkmode;
+}
+
+.is-moon .footer__mode.is-moon:hover .footer__mode-moon {
+  color: $text-icons-color-darkmode;
+}
+
+.is-moon .game-board__cell.initial {
+  background-color: #aeafb1;
+}
+
+.is-moon .game-board__cell {
+  background-color: #2c363e;
+  border: 1px solid transparent;
+}
+
+.is-moon .game-over__textbox {
+  color: $text-icons-color-brightmode;
+}
+
+.is-moon .game-over__buttons {
+  color: #000;
+}
+
+.is-moon .topmenu__restart-icon--svg {
+  color: $text-icons-color-darkmode;
+}
+
+.is-moon .nav__promotion--link {
+  color: $text-icons-color-darkmode;
+}
+
+.is-moon .sound__position.on {
+  color: greenyellow;
+}

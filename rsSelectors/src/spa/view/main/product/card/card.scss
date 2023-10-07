@@ -1,0 +1,67 @@
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    border: 1px solid;
+
+    &.active {
+        outline: 5px solid yellowgreen;
+    }
+
+    &.passed {
+        border: 4px solid white;
+    }
+}
+
+.card__full {
+    height: 300px;
+    width: 600px;
+}
+
+.card__field {
+    width: 80%;
+
+    text-align: center;
+}
+
+.card__button {
+    width: 80%;
+}
+
+.card__button:hover {
+    cursor: pointer;
+}
+
+.with-help::after {
+    content: 'with help';
+    position: absolute;
+    color: red;
+    top: 0.5rem;
+}
+
+@media (max-width: 650px) {
+
+    .card {
+        margin: 5px;
+        padding: 0;
+
+        &.active {
+            outline: 3px solid yellowgreen;
+        }
+    
+        &.passed {
+            border: 1.5px solid white;
+        }
+    }
+
+    .card__full {
+        width: 400px;
+    }
+}

@@ -1,0 +1,80 @@
+.about-us {
+  padding: 6rem 0 9rem;
+
+  @media (max-width: $tablet-width) {
+    padding: 4.4rem 0 9.7rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 2rem 0 4rem;
+  }
+}
+
+.about-us__fullinform {
+  padding-top: 2rem;
+
+  @media(max-width: 1050px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.about-us__imgbox {
+  display: flex;
+  margin-right: 3.1rem;
+  justify-content: center;
+  padding-left: 8.5rem;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 3rem;
+  }
+
+  @media (max-width: 680px) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 26rem;
+    height: 35.3rem;
+  }
+}
+
+.layout-2-column>.about-us__textcontainer {
+  flex-basis: 36%;
+  padding-top: 1.6rem;
+
+  @media(max-width: 1050px) {
+    width: 50%;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 5.4rem;
+    width: 60%;
+  }
+
+  @media(max-width: 680px) {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 1.4rem;
+    text-align: justify;
+  }
+}
+
+.about-us__title {
+  margin-bottom: 2.2rem;
+
+  @media(max-width: 680px) {
+    text-align: center;
+  }
+}
+
+.about-us__text {
+  margin-bottom: 2.5rem;
+  @include font($size:1.5rem, $height:160%);
+  @extend %font-addserif;
+  color: $color-primary-dark;
+}

@@ -1,0 +1,79 @@
+@import '../../styles/variables';
+
+.footer__container {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $middle-media) {
+    justify-content: space-around;
+  }
+}
+
+.footer__logo-svg {
+  width: 15rem;
+  height: 6rem;
+
+  &--partone{
+    color: #000;
+    transition: color $transition-time $transition-effect;
+  }
+  &--parttwo{
+    color: #000;
+    transition: color $transition-time $transition-effect;
+  }
+
+  &:hover .footer__logo-svg--partone {
+    color: greenyellow;
+  }
+  &:hover .footer__logo-svg--parttwo {
+    color: yellow;
+  }
+}
+
+.footer__mode {
+  display: flex;
+  transform: translateX(-5rem);
+  gap: 1rem;
+  cursor: pointer;
+
+  &-svg {
+    width: 3rem;
+    height: 3rem;
+    transition: color $transition-time $transition-effect;
+  }
+
+  &.is-sun .footer__mode-sun {
+    color: #a59587;
+  }
+
+  &.is-sun:hover .footer__mode-sun{
+    color: #000;
+  }
+
+  &.is-sun:hover .footer__mode-moon{
+    color: #ffd87a;
+  }
+
+  &.is-moon .footer__mode-moon{
+    color: #ffd87a;
+  }
+
+  &.is-moon:hover .footer__mode-sun {
+    color: #a59587;
+  }
+
+  &.is-moon:hover .footer__mode-moon {
+    color: #000;
+  }
+}
+
+.footer__score {
+  font-size: 2rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

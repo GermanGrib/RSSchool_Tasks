@@ -1,0 +1,15 @@
+.rotate {
+  animation-name: rotate360;
+  animation-duration: $transition-time;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

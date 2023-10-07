@@ -1,0 +1,25 @@
+.tracks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.middle-controllers__start-race {
+  &.is-active {
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.3;
+  }
+}
+
+.middle-controllers__stop-race {
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.3;
+
+  &.is-active {
+    pointer-events: unset;
+    user-select: unset;
+    opacity: 1;
+  }
+}

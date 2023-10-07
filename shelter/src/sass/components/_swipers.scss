@@ -1,0 +1,283 @@
+.swiper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 760px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.swiper__window {
+  display: flex;
+  margin-bottom: 5.9rem;
+  overflow: hidden;
+
+  // @media (max-width: 760px) {
+  //   flex-direction: column;
+  //   margin-bottom: 4rem;
+  // }
+
+  @media (max-width: 760px) {
+    width: 100%;
+    order: -1;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+}
+
+
+.swiper__container {
+  display: flex;
+  position: relative;
+  width: 98rem;
+  left: -98.8rem;
+
+  @media (max-width:1200px) {
+    width: 58rem;
+    left: -61rem;
+  }
+
+  @media (max-width: 760px) {
+    width: 29rem;
+    left: -51rem;
+  }
+}
+
+.swiper__pictures {
+  justify-content: center;
+  display: flex;
+
+  & .swiper__item:nth-child(3) {
+    display: block;
+  }
+
+
+  @media (max-width:1200px) {
+    & .swiper__item:nth-child(n + 2) {
+      display: block;
+    }
+
+    & .swiper__item:nth-child(3) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 760px) {
+    margin-right: 25rem;
+
+    &:nth-child(2){
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 760px) {
+    margin-bottom: 2rem;
+
+    & .swiper__item:nth-child(n + 2) {
+      display: none;
+    }
+  }
+}
+
+.swiper__item {
+  margin-right: 8.7rem;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  &:nth-child(3n) {
+    margin: 0;
+  }
+
+  &:hover>.swiper__card .link {
+    background-color: $color-primary-darknes;
+    border: 0.2rem solid $color-primary-darknes;
+  }
+
+  @media (max-width:1200px) {
+    margin-right: 4rem;
+  }
+
+  @media (max-width:760px) {
+  margin-right: 0;
+  }
+
+}
+
+.swiper__card {
+  display: flex;
+  width: 27rem;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 0.9rem;
+  background-color: #FAFAFA;
+  transition: background-color $transition-time $transition-change;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-light;
+  }
+}
+
+.swiper__img {
+  width: 27rem;
+  height: 27rem;
+  margin-bottom: 3rem;
+  border-top-left-radius: 0.9rem;
+  border-top-right-radius: 0.9rem;
+}
+
+.swiper__title {
+  margin-bottom: 3rem;
+
+  @media (max-width:1200px) {
+    margin-bottom: 3.4rem;
+  }
+
+  @media (max-width: 760px) {
+    font-size: 2rem;
+  }
+}
+
+.swiper__link {
+  margin-bottom: 2.8rem;
+  width: 71%;
+  border: 0.2rem solid $color-primary;
+  align-self: center;
+  transition: background-color $transition-time $transition-change;
+
+  @media (max-width: 1200px) {
+    padding: 1rem;
+  }
+
+  @media (max-width:760px) {
+    margin-bottom: 3.3rem;
+  }
+}
+
+.swiper__btn {
+  content: '';
+  padding: 2.5rem;
+  margin-bottom: 6rem;
+  border: 0.2rem solid #F1CDB3;
+  background-image: url(../assets/svg/leftArrow.svg);
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 50%;
+  background-position: center;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color $transition-time $transition-change;
+
+  &:hover {
+    background-color: $color-primary-darknes;
+    border: 0.2rem solid $color-primary-darknes;
+  }
+
+  &:active {
+    background-color: $color-primary-darknes;
+  }
+
+  &-colored {
+    background-color: $color-primary;
+  }
+
+  @media (max-width:760px) {
+    margin-bottom: 4rem;
+  }
+}
+
+.nextbtn {
+  transform: rotate(180deg);
+}
+
+@keyframes move-right {
+  from {
+    left: -98.8rem
+  }
+
+  to {
+    left: -197.6rem;
+  }
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+
+@keyframes move-left {
+  from {
+    left: -98.8rem
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+}
+
+@keyframes move-right-tablet {
+  from {
+    left: -61rem
+  }
+
+  to {
+    left: -122rem;
+  }
+}
+
+.transition-right-tablet {
+  animation-name: move-right-tablet;
+  animation-duration: 1s;
+}
+
+@keyframes move-left-tablet {
+  from {
+    left: -61rem
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+.transition-left-tablet {
+  animation-name: move-left-tablet;
+  animation-duration: 1s;
+}
+
+@keyframes move-right-mobile {
+  from {
+    left: -51rem
+  }
+
+  to {
+    left: -102rem;
+  }
+}
+
+.transition-right-mobile {
+  animation-name: move-right-mobile;
+  animation-duration: 1s;
+}
+
+@keyframes move-left-mobile {
+  from {
+    left: -51rem
+  }
+
+  to {
+    left: 2rem;
+  }
+}
+
+.transition-left-mobile {
+  animation-name: move-left-mobile;
+  animation-duration: 1s;
+}

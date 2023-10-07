@@ -1,0 +1,18 @@
+.container {
+  max-width: $content-width;
+  padding: 0 4rem;
+  margin: 0 auto;
+  min-width: 320px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 3rem;
+  }
+
+  @media (max-width:680px) {
+    padding: 0 1rem;
+  }
+}
+
+.section {
+  margin: 0;
+}

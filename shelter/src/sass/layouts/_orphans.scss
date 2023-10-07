@@ -1,0 +1,41 @@
+.orphans {
+  padding: 8rem 0 9.8rem;
+  background-color: $color-cream;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 8rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 4rem 0;
+  }
+}
+
+.orphans__title {
+  margin-bottom: 5.8rem;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    margin-bottom: 5.9rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 4.2rem;
+    padding: 0;
+  }
+}
+
+.orphans__getinfo {
+  display: flex;
+  justify-content: center;
+
+  .orphans__link {
+    background-color: #F1CDB3;
+    transition: background-color $transition-time $transition-change;
+
+    &:hover {
+      background-color: $color-primary-darknes;
+    }
+  }
+}

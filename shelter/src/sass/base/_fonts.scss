@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Georgian';
+  src: url('../fonts/AnyConv.com__georgia-bold.woff2') format('woff2'),
+    url('../fonts/AnyConv.com__georgia-bold.woff') format('woff'),
+    url('../fonts/georgia-bold.ttf')format('ttf');
+
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgian';
+  src: url('../fonts/AnyConv.com__georgia-regular.woff2') format('woff2'),
+    url('../fonts/AnyConv.com__georgia-regular.woff') format('woff'),
+    url('../fonts/georgia-regular.ttf')format('ttf');
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgian';
+  src: url('../fonts/AnyConv.com__arial-italic.woff2') format('woff2'),
+    url('../fonts/AnyConv.com__georgia-italic.woff') format('woff'),
+    url('../fonts/arial-italic.ttf')format('ttf');
+
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('../fonts/AnyConv.com__arial-regular.woff2') format('woff2'),
+    url('../fonts/AnyConv.com__georgia-regular.woff') format('woff'),
+    url('../fonts/arial-regular.ttf')format('ttf');
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('../fonts/AnyConv.com__arial-italic.woff2') format('woff2'),
+    url('../fonts/AnyConv.com__arial-italic.woff') format('woff'),
+    url('../fonts/georgia-italic.ttf')format('ttf');
+
+  font-weight: 100;
+  font-style: normal;
+}

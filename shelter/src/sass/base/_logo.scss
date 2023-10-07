@@ -1,0 +1,30 @@
+.logo {
+  &:hover .logo__maintitle {
+    color: $color-light;
+  }
+
+  &:hover .logo__subtitle {
+    color: $color-primary;
+  }
+
+  &-pets:hover .logo__maintitle {
+    color: $color-primary;
+  }
+}
+
+.logo__maintitle {
+  @include font($size:3.2rem, $height:110%);
+  letter-spacing: 0.06em;
+  color: $color-primary;
+  margin-bottom: 10px;
+  transition: color $transition-time $transition-change;
+}
+
+.logo__subtitle {
+  @include font($size:1.3rem, $height:1.5rem);
+  @extend %font-addserif;
+  color: $color-light;
+  padding-left: 4px;
+  letter-spacing: 0.1em;
+  transition: color $transition-time $transition-change;
+}

@@ -1,0 +1,8 @@
+.layout-2-column {
+  @include columns($width: 47%);
+  justify-content: initial;
+}
+
+.layout-3-column {
+  @include columns($width: 27%);
+}

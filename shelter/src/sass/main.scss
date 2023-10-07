@@ -1,0 +1,35 @@
+@import './base/normolize.css';
+
+// Abstract
+@import 'abstract/constants';
+@import 'abstract/mixins';
+@import 'abstract/placeholders';
+
+// Base
+@import 'base/fonts';
+@import 'base/global';
+@import 'base/logo';
+@import 'base/reset';
+
+// Components
+@import 'components/burger';
+@import 'components/buttons';
+@import 'components/modals';
+@import 'components/swipers';
+
+// Layouts
+@import 'layouts/aboutus';
+@import 'layouts/columns';
+@import 'layouts/container';
+@import 'layouts/donate';
+@import 'layouts/footer';
+@import 'layouts/greeting';
+@import 'layouts/header';
+@import 'layouts/navigation';
+@import 'layouts/orphans';
+@import 'layouts/support';
+
+//Pages
+// 1) Pets
+@import 'pages/pets/header';
+@import 'pages/pets/orphans';

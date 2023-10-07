@@ -1,0 +1,27 @@
+// Example
+@mixin font($size, $weight:400, $style: normal, $height) {
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+  line-height: $height;
+}
+
+// After that in another scss files you can include this mixin for diff classes with this way -> 
+// @include font($size:44px,$height54px) - normal can skip because it's default value in mixin font. 
+// You can do any default val
+
+@mixin columns ($width) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  >* {
+    flex-basis: $width;
+  }
+}
+
+// @mixin media-laptop {
+//   @media (max-width: $cpntent-width) {
+//     @content
+//   }
+// }

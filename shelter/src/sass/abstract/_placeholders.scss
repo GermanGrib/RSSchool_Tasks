@@ -1,0 +1,15 @@
+// Example
+// %transition{
+//   transition: all .3s ease-in-out;
+// }
+
+%font-addsans {
+  font-family: 'Georgian', 'Times New Roman', 'serif';
+}
+
+%font-addserif {
+  font-family: 'Arial', 'Halvetica', 'sans-serif';
+}
+
+
+// If you want add this holders for any class you need write this: @extend %font-add

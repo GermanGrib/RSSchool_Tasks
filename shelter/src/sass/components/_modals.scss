@@ -1,0 +1,180 @@
+// Black background
+.modal-background {
+  width: 100%;
+  height: 300vh;
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+
+  &.block {
+    display: block;
+  }
+}
+
+// '.modal-aboutorphans'
+
+.modal-aboutorphans {
+  display: none;
+  position: absolute;
+  height: 50rem;
+  width: 90rem;
+  background-color: $color-light-element;
+  color: $color-black;
+  border-radius: 9px;
+  letter-spacing: 0.06em;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+
+  @media(max-width: 1000px) {
+    height: auto;
+    width: calc(100% - 14rem);
+  }
+
+  @media(max-width: $mobile-width) {
+    width: calc(100% - 5rem);
+  }
+
+  &.is-active {
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+    user-select: all;
+  }
+}
+
+.animalinfo {
+  display: flex;
+}
+
+.animalinfo__imgbox {
+  flex: 55.2%;
+  flex-shrink: 0;
+
+  @media(max-width: 600px) {
+    display: none;
+  }
+}
+
+.animalinfo__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+}
+
+.animalinfo__textbox {
+  display: flex;
+  padding: 5rem 2rem 2rem 3rem;
+  flex-direction: column;
+
+  @media(max-width: 900px) {
+    padding: 1rem 0.8rem;
+  }
+
+  @media(max-width: 600px) {
+    padding: 1rem;
+  }
+}
+
+.animalinfo__title {
+  margin-bottom: 1rem;
+  color: $color-black;
+  @include font($size:3.5rem, $height:130%);
+
+  @media(max-width: 600px) {
+    text-align: center;
+  }
+}
+
+.animalinfo__subtitle {
+  margin-bottom: 4rem;
+  @include font($size:2rem, $height:115%);
+
+  @media(max-width: 900px) {
+    margin-bottom: 2rem;
+  }
+
+  @media(max-width: 600px) {
+    text-align: center;
+  }
+}
+
+.animalinfo__about {
+  margin-bottom: 4rem;
+  @include font($size:1.5rem, $height:110%);
+
+  @media(max-width: 900px) {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+  }
+}
+
+.animalinfo__list {
+  margin: 0;
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.animalinfo__item {
+  margin-bottom: 1.1rem;
+  @include font($size:1.5rem, $height:110%);
+
+  &::marker {
+    color: $color-primary;
+    padding-left: 0;
+  }
+
+  @media(max-width: $mobile-width) {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.animalinfo__characteristic {
+  font-weight: bold;
+}
+
+.modal-aboutorphans__closebtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -5.5rem;
+  right: -4rem;
+  width: 5.2rem;
+  height: 5.2rem;
+  border: 2px solid $color-primary;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color $transition-time $transition-change, transform $transition-time $transition-change;
+
+  &:hover {
+    background-color: $color-primary;
+    transform: rotate(90deg);
+  }
+
+  @media(max-width: $mobile-width) {
+    top: -5rem;
+    right: -2rem;
+  }
+}
+
+.modal-aboutorphans__closecrossline {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  border: 1px solid $color-black;
+  border-radius: 50%;
+
+  &:first-child {
+    transform: rotate(45deg);
+  }
+
+  &:last-child {
+    transform: rotate(-45deg);
+  }
+}

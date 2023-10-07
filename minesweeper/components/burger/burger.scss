@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 4rem;
+  height: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  transition: transform $transition-time $transition-effect;
+
+ &.is-open {
+    transform: rotate(-90deg);
+
+    & .burger__line {
+      border: 2px solid #fff;
+    }
+  }
+
+  @media (min-width: 800px) {
+    display: none;
+  }
+}
+
+.burger__line {
+  display: inline-block;
+  width: 100%;
+  border: 2px solid black;
+}
+

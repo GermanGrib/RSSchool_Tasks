@@ -1,0 +1,78 @@
+html {
+    font-size: 10px;
+}
+
+.body {
+    font-size: 1.6rem;
+    color: #fff;
+    background: #17181c;
+    font-family: sans-serif;
+}
+
+.header {
+    padding: 1rem 3rem;
+}
+
+.header .header__title {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.footer {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.footer .copyright {
+    font-size: 1.4rem;
+    color: #333;
+    text-align: center;
+}
+
+.footer .copyright .copyright__link {
+    color: #444;
+}
+
+.footer .copyright .copyright__link:hover {
+    color: #555;
+}
+
+.footer .copyright:before {
+    content: '©';
+}
+
+.footer__logo-link {
+    display: flex;
+    width: 10rem;
+    height: 5rem;
+    color: #fff;
+    transition: opacity .3s ease-in-out;
+}
+
+.footer__githab-link {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: opacity .3s ease-in-out;
+}
+
+.footer__logo-link:hover,
+.footer__githab-link:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 550px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .main {
+        margin-bottom: auto;
+    }
+}

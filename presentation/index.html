@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+	<link rel="stylesheet" href="./css/myStyles.css">
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<div class="main-slide-container">
+					<a class="main-slide-link" href="https://react.dev/" target="_blank"></a>
+					<div class="main-slide-text">React</div>
+				</div>
+			</section>
+			<section>
+				<div class="my-chose-main-text">Why I chose React?</div>
+				<ul class="reasons-list">
+					<li class="reasons-list__item">
+						<a class="reasons-list__link"
+							href="https://www.linkedin.com/jobs/search/?currentJobId=3641745889&f_WT=2&geoId=105374601&keywords=front%20end%20developer&location=Porto%2C%20Portugal&refresh=true&sortBy=R"
+							target="_blank">
+							Job offers
+						</a>
+					</li>
+					<li class="reasons-list__item">
+						<a class="reasons-list__link" href="https://gist.github.com/tkrotoff/b1caa4c3a185629299ec234d2314e190"
+							target="_blank">
+							Statistic of usage
+						</a>
+					</li>
+					<li class="reasons-list__item">
+						<a class="reasons-list__link"
+							href="https://medium.com/@donotapply/angular-vs-react-which-is-easier-to-learn-28c94cbed744#:~:text=The%20React%20vs.%20Angular%20learning%20curve%20is%20the%20key%20difference.%20React%20has%20by%20far%20the%20easier%20learning%20curve%2C%20so%20depending%20on%20your%20skill%20level%2C%20it%E2%80%99s%20the%20one%20to%20go%20for%20if%20you%20want%20to%20get%20to%20developing%20faster.%20Those%20new%20to%20React%20(okay%2C%20seasoned%20professionals%20too)%20love%20how%20it%20offers%20pre%2Dbuilt%20solutions."
+							target="_blank">
+							Easier to learn
+						</a>
+					</li>
+					<li class="reasons-list__item">
+						<a class="reasons-list__link" href="https://dev.to/t/react" target="_blank">
+							Huge community
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<section>
+					<div class="compare-projects-main-text">
+						Projects On React / Vanila JS
+					</div>
+				</section>
+				<section>
+					<div class="react-vanila-container container-r-v">
+						<div class="react-vanila-container-box-info">
+							React
+							<img class="react-vanila-first-slide-img" src="./assets/react-vanila-first.png" alt="cool pictures">
+						</div>
+						<div class="react-vanila-container-box-info">
+							Vanila JS
+							<img class="react-vanila-first-slide-img" src="./assets/react-vanila-first1.png" alt="cool pictures">
+						</div>
+					</div>
+				</section>
+			</section>
+			<section>
+				<div class="last-slide-container">
+					<a class="last-slide-link" href="https://rs.school" target="_blank">
+						<img class="rs-logo-svg" src="./assets/im-fine.svg" alt="rs creature">
+						<div class="last-slide-text">RS School - Free! ! !</div>
+					</a>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>

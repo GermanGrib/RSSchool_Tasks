@@ -1,0 +1,10 @@
+.github {
+  width: 3rem;
+
+  color: rgba(255, 255, 255, 0.3);
+  transition: color .3s ease-in-out;
+
+  &:hover {
+      color: #fff;
+  }
+}

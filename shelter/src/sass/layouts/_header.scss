@@ -1,0 +1,23 @@
+.header {
+  padding: 3rem 0;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 3rem;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    align-items: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 2rem;
+  }
+}

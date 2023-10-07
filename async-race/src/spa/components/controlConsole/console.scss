@@ -1,0 +1,35 @@
+.top-controllers-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+}
+
+.top-controllers__remove-btn {
+  margin-right: 1rem;
+}
+
+.top-controllers__car-name {
+  margin: 0;
+}
+
+.update-car.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+}
+
+.control-btns__race {
+  &.disabled{
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
+.control-btns__reset {
+  &.disabled{
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}

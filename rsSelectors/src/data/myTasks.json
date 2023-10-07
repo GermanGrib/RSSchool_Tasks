@@ -1,0 +1,97 @@
+[
+  {
+    "id": "1",
+    "level": "Level 1",
+    "task": "Select the table, the selector weight should be 110.",
+    "answer": ["#table.game-board__desk", ".game-board__desk#table"],
+    "explanation": "# - 100 . ',' - 10 .Total: 110",
+    "levelPassed": "false",
+    "passedWithHelp": "false"
+  },
+  {
+    "id": "2",
+    "level": "Level 2",
+    "task": "Select the apple in the last plate (The selector weight should be 40).",
+    "answer": [".game-board__desk .game-board__plate:last-child .game-board__apple"],
+    "explanation": ".game-board__desk - weight 10 (class Selector), .game-board__plate - weight 10 (class Selector). :last-child - weight 10 (pseudo class :last-child), .game-board__apple - weight 10 (class Selector) .Total: 40",
+    "levelPassed": "false",
+    "passedWithHelp": "false"
+  },
+  {
+    "id": "3",
+    "level": "Level 3",
+    "task": "Select every 2nd peach in all plates regardless of the number of plates.",
+    "answer": [".game-board__plate:nth-of-type(2n) .game-board__peach"],
+    "explanation": "It was easy",
+    "levelPassed": "false",
+    "passedWithHelp": "false"
+  },
+  {
+    "id": "4",
+    "level": "Level 4",
+    "task": "Select all tomatoes except the one in the 2nd plate. The selector specificity should be 50.",
+    "answer": [".game-board__desk .game-board__plate:not(:nth-of-type(2)) .game-board__tomato"],
+    "explanation": ".game-board__desk - weight 10 (class Selector) .game-board__plate - weight 10 (class Selector). :not(:nth-of-type(2)) - weight 20 (Pseudo-class :not with nested pseudo-class :nth-of-type) .game-board__tomato - weight 10 (class Selector) .Total: 50",
+    "levelPassed": "false",
+    "passedWithHelp": "false"
+  },
+  {
+    "id": "5",
+    "level": "Level 5",
+    "task": "Select the orange in the third plate with a selector weight of 50.",
+    "answer": [".game-board__desk .game-board__plate:nth-child(3)[data-attribute='orange'] .game-board__orange"],
+    "explanation": ".game-board__desk - weight 10, .game-board__plate:nth-child(3) - weight 10. [data-attribute='orange'] - weight 20, .game-board__orange - weight 10. Total: 50",
+    "levelPassed": "false",
+    "passedWithHelp": "false"
+  },
+  {
+    "id": "6",
+    "level": "Level 6",
+    "task": "Level of rest - write anything of 5 characters or more than 5.",
+    "answer": ["/^.{5,}$/"],
+    "explanation": "Resting is necessary too.",
+    "levelPassed": "false",
+    "passedWithHelp": "false"
+  },
+  {
+    "id": "7",
+    "level": "Level 7",
+    "task": "Select all the apples with a combined selector weight of 30.",
+    "answer": [
+      ".game-board__desk .game-board__plate > .game-board__apple",
+      ".game-board__desk .game-board__plate .game-board__apple",
+      ".game-board__desk > .game-board__plate > .game-board__apple",
+      ".game-board__desk .game-board__plate > .game-board__apple"
+    ],
+    "explanation": "3 classes .Total: 30",
+    "levelPassed": "false",
+    "passedWithHelp": "false"
+  },
+  {
+    "id": "8",
+    "level": "Level 8",
+    "task": "Select the body of the HTML document with a selector weight of 1.",
+    "answer": ["body"],
+    "explanation": "Tag has only 1 weight, yeah it's true",
+    "levelPassed": "false",
+    "passedWithHelp": "false"
+  },
+  {
+    "id": "9",
+    "level": "Level 9",
+    "task": "Riddle: I'm found in HTML, a block-level element I be, A container for other elements you see. With classes and IDs, I can be styled with glee, In a separate CSS file, my styles decree. What am I? (P.s. every last)",
+    "answer": ["div:last-child"],
+    "explanation": "Oh my Gosh! You are so clever! ",
+    "levelPassed": "false",
+    "passedWithHelp": "false"
+  },
+  {
+    "id": "10",
+    "level": "Level 10",
+    "task": "Select the tomato in 2nd plate with a selector weight of 133.",
+    "answer": ["div.game-board__desk > div.game-board__plate:nth-child(2) > div#tomato"],
+    "explanation": "div - 1 .game-board__desk - 10 .div- 1.game-board__plate:nth-child(2) - 20 .div - 1 .#tomato - 100 .Total: 133",
+    "levelPassed": "false",
+    "passedWithHelp": "false"
+  }
+]

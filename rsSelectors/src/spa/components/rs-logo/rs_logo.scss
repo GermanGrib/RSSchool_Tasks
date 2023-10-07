@@ -1,0 +1,12 @@
+.rs-logo {
+  display: flex;
+  width: 6rem;
+  height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+
+  &:hover {
+      color: #fff;
+  }
+}

@@ -1,0 +1,195 @@
+.css-editor {
+  flex-basis: 50%;
+  height: 67%;
+}
+
+.css-editor__title {
+  user-select: none;
+}
+
+.css-editor__form {
+  display: flex;
+  position: relative;
+}
+
+.css-editor__confirm-solution {
+  user-select: none;
+  padding: 2rem;
+}
+
+
+.css-editor__utils {
+  position: absolute;
+  right: 40%;
+  top: -3rem;
+}
+
+.utils__task-text.show-task {
+  display: flex;
+  padding: 0.5rem;
+  min-width: 50vw;
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  font-size: 1.5rem;
+  top: 3rem;
+  left: 0;
+  z-index: 100;
+}
+
+.css-editor__text-solution,
+.css-editor__color-code {
+  position: relative;
+  height: auto;
+  width: 100%;
+  height: 6rem;
+  color: white;
+  background: none;
+  border: none;
+  margin-right: 0.5rem;
+  resize: none;
+}
+
+.utils__task-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.css-editor__rules {
+  padding-top: 1rem;
+  height: 20vh;
+  overflow: auto;
+}
+
+.css-editor__text-solution::placeholder,
+.css-editor__text-solution,
+.css-editor__color-code {
+  font-size: 1.3rem;
+  padding-left: 0.2rem;
+  font-family: monospace;
+  line-height: normal;
+}
+
+.css-editor__text-solution {
+  color: transparent;
+  caret-color: #fff;
+}
+
+.css-editor__color-code {
+  position: absolute;
+  word-break: break-word;
+  color: #fbcb65;
+  width: 78%;
+  overflow: auto;
+}
+
+.token.punctuation {
+  color: #5eb0d7;
+}
+
+.token.operator {
+  color: #5eb0d7;
+  background:none;
+}
+
+@media (max-width: 950px) {
+
+  .css-editor__color-code {
+    width: 75%;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .css-editor__color-code {
+    width: 71%;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .css-editor__title {
+    font-size: 1.1rem;
+  }
+
+  .css-editor__color-code {
+    width: 77%;
+  }
+
+  .css-editor__text-solution::placeholder,
+  .css-editor__text-solution,
+  .css-editor__color-code {
+    font-size: 0.9rem;
+  }
+
+  .css-editor__text-solution,
+  .css-editor__color-code {
+    height: 6.5rem;
+  }
+
+  .css-editor__confirm-solution {
+    padding: 1rem;
+  }
+
+  .css-editor__rules {
+    font-size: 0.8rem;
+  }
+
+  .utils__task-text.show-task {
+    min-width: 40vw;
+    left: -7rem;
+    font-size: 0.8rem;
+  }
+
+  .css-editor__utils {
+    right: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .css-editor__color-code {
+    width: 74%;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-5px, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(5px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.wrong-answer {
+  animation: shake 1s infinite;
+}
+
+.right-answer {
+  background-color: transparent;
+}

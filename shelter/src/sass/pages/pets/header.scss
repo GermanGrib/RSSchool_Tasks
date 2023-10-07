@@ -1,0 +1,72 @@
+.header-pets {
+  padding-top: 3rem;
+  background-color: $color-light;
+}
+
+.logo__maintitle-pets {
+  color: $color-darkgray;
+}
+
+.logo__subtitle-pets {
+  color: $color-dark;
+}
+
+.navigation-pets {
+  @media (max-width: 767px) {
+    background-color: $color-light;
+  }
+}
+
+.navigation__link-pets {
+  color: $color-darkgray;
+  transition: color $transition-time ease-in-out, border-bottom $transition-time ease-in-out;
+}
+
+.navigation__item-pets {
+
+  .navigation__link-pets {
+    color: $color-darkgray;
+    padding-bottom: 0.4rem;
+  }
+
+  &:first-child .navigation__link-pets {
+    color: $color-darkgray;
+    user-select: all;
+    pointer-events: all;
+    padding-bottom: 0;
+    border-bottom: none;
+    cursor: pointer;
+  }
+
+  &:nth-child(2) .navigation__link-pets {
+    border-bottom: 0.3rem solid $color-primary;
+    user-select: none;
+    cursor: default;
+  }
+
+  &:not(:first-child) .navigation__link-pets:hover {
+    color: $color-dark;
+  }
+
+  .navigation__link-pets:active {
+    border-bottom: 0.3rem solid $color-primary;
+    color: $color-darkgray;
+  }
+
+  &:first-child .navigation__link-pets:hover {
+    color: $color-dark;
+  }
+
+  & .navigation__link-pets:active {
+    color: $color-darkgray;
+    padding-bottom: 0.4rem;
+    border-bottom: 0.3rem solid $color-primary;
+  }
+
+}
+
+// Burger
+
+.burger__line-pets {
+  border: 0.1rem solid $color-black;
+}

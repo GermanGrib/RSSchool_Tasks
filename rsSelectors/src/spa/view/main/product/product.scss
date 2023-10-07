@@ -1,0 +1,52 @@
+.product {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+
+    height: 100%;
+    width: 100%;
+
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    overflow-y: scroll;
+
+    &.details {
+        grid-template-columns: none;
+    }
+}
+
+.product.details .card__full {
+    margin: auto;
+}
+
+.reset-btn {
+    position: absolute;
+    padding: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3.5rem;
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .product {
+        margin: 5px;
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .reset-btn {
+        top: 2rem;
+    }
+
+}

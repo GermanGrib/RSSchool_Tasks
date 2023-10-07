@@ -1,0 +1,15 @@
+@import '../../../models/variables';
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-item {
+  transition: opacity .3s ease-in-out;
+  cursor: pointer;
+  
+  &:hover {
+    opacity: 0.7;
+  }
+}

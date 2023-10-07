@@ -1,0 +1,32 @@
+@import '../../../models/variables';
+
+.car {
+  position: relative;
+  background-color: $roadColor;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Layer_1' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cpolyline style='fill:none;stroke:%23000000;stroke-width:2;stroke-miterlimit:10;' points='6,28 6,5 26,5 26,19 6,19 '/%3E%3Crect x='22' y='5' width='4' height='4'/%3E%3Crect x='19' y='15' width='3' height='4'/%3E%3Crect x='19' y='9' width='3' height='3'/%3E%3Crect x='13' y='15' width='3' height='4'/%3E%3Crect x='13' y='9' width='3' height='3'/%3E%3Crect x='6' y='15' width='4' height='4'/%3E%3Crect x='6' y='9' width='4' height='3'/%3E%3Crect x='22' y='12' width='4' height='3'/%3E%3Crect x='16' y='12' width='3' height='3'/%3E%3Crect x='10' y='12' width='3' height='3'/%3E%3Crect x='16' y='5' width='3' height='4'/%3E%3Crect x='10' y='5' width='3' height='4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+  }
+}
+
+.car-svg {
+  position: relative;
+  display: inline-block;
+  width: 8rem;
+  height: 5rem;
+  color: inherit;
+
+  @media (max-width: 750px) {
+    .winner & {
+      width: 5rem;
+    }
+  }
+}

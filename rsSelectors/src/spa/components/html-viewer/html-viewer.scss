@@ -1,0 +1,94 @@
+.html-viewer {
+    padding-left: 3rem;
+    flex-basis: 40%;
+    height: 67%;
+    overflow: scroll;
+}
+
+.html-viewer__body {
+
+    *.hovered {
+        color: #fff;
+    }
+
+    * {
+        transition: color .3 ease-in-out;
+    }
+
+    *:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.html-viewer__title {
+    user-select: none;
+}
+
+.pad-1 {
+    padding-left: 1rem;
+}
+
+.pad-2 {
+    padding-left: 2rem;
+}
+
+@media (max-width: 700px) {
+
+    .html-viewer {
+        padding-left: 0.5rem;
+        flex-basis: 48%;
+    }
+
+    .html-viewer__title {
+        text-align: end;
+    }
+
+    .html-viewer__body {
+        font-size: 0.8rem;
+    }
+
+    .pad-1 {
+        padding-left: 0.2rem;
+    }
+
+    .pad-2 {
+        padding-left: 0.5rem;
+    }
+}
+
+.pad-0 .token,
+.pad-1 .token,
+.pad-2 .token {
+    background: none;
+}
+
+.pad-0 .token.operator,
+.pad-1 .token.operator,
+.pad-2 .token.operator,
+.pad-0,
+.pad-1,
+.pad-2 {
+    color: #5eb0d7;
+}
+
+.pad-0 .token.keyword,
+.pad-1 .token.keyword,
+.pad-2 .token.keyword {
+    color: #9abbdc;
+}
+
+.pad-0 .token.string,
+.pad-1 .token.string,
+.pad-2 .token.string {
+    color: #f19766;
+}
+
+.pad-0:hover .token,
+.pad-1:hover .token,
+.pad-2:hover .token,
+.pad-0.hovered .token,
+.pad-1.hovered .token,
+.pad-2.hovered .token {
+    color: #fff;
+}

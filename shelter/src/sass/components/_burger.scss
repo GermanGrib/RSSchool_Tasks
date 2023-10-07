@@ -1,0 +1,51 @@
+.burger {
+  display: none;
+  position: relative;
+  width: 3rem;
+  height: 2.3rem;
+  cursor: pointer;
+  transition: transform $transition-time $transition-change;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.burger.is-active {
+  transform: rotate(-90deg);
+  z-index: 2;
+
+  & .burger__line:nth-child(2) {
+    transform: translateY(-100%);
+  }
+
+  & .burger__line:last-child {
+    bottom: 7%;
+  }
+
+  & html {
+    overflow-y: hidden;
+  }
+}
+
+.burger__line {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  border: 0.1rem solid $color-primary;
+
+  &:first-child {
+    top: 2%;
+  }
+
+  &:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:last-child {
+    bottom: 1px;
+  }
+
+}
